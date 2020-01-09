@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Function_Step_67</title>
+        <body>
+            <p id="age"></p>
+
+            <script>
+            function myfunction() {
+                var yearBorn = 1971;
+                var thisYear = 2020 ;
+              return thisYear - yearBorn;     
+            }
+            document.getElementById("age").innerHTML = myfunction()
+            </script>
+
+            <p id="ageToo"></p>
+
+          <script>
+            var x= myFunctionToo(2020,1971);
+            document.getElementById("ageToo").innerHTML = x;
+           
+            function myFunctionToo(a, b) {
+                return a - b;
+            }
+            
+            </script>
+        </body>
+    </head>
+
+
+
+
+</html>
