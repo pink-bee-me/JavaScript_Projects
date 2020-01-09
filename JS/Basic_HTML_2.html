@@ -15,21 +15,14 @@
     <audio id="myAudio">
             <source src ="04ShortSkirt_LongJacket.mp3" type="audio/mpeg">
     </audio>
-
-        <p> The first song is "Short Skirt, Long Jacket" by Cake. Press Play to Begin. </p>
+        <p>Press Play to begin the audio experience...</p>
         <button onclick = "playAudio()" type="button">Play Audio</button>
         <button onclick = "pauseAudio()" type="button">Pause Audio</button>
 
-
-       <audio id="myAudio2">
-        <source src="Golden Brown - The Stranglers.mp3" type = "audio/mpeg">    
-       </audio>
-       <p>Use the buttons below to control the playback of song number two, "Golden Brown" by the Stranglers.</p>
-        <button onclick = "playAudio()" type="button">Play Audio</button>
-        <button onclick = "pauseAudio()" type="button">Pause Audio</button>  
-        
-
-        
+     
+        <button onclick = "playback_details()" type="button">Track Info:</button>
+        <p id="description"></p>
+   
         <script src = "Basic_JavaScript_2.js"></script>
    
    

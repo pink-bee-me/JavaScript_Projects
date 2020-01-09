@@ -11,12 +11,10 @@ function playAudio() {
      y.pause();
  }
  
- var xx = document.getElementById("myAudio2"), yy = documnet.getElementById("myAudio2");
- function playAudio() {
-    xx.play();
+function playback_details() {
+    var details= "Title: Short Skirt, Long Jacket";
+    details += " / by Cake";
+    document.getElementById("description").innerHTML = details;
 }
- function pauseAudio() {
-     yy.pause();
- }
-
+    
 
