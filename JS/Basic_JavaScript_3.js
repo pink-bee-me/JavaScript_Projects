@@ -1,7 +1,11 @@
+function random_Num() {
+    document.getElementById("Random_Num_Picker").innerHTML = window.alert(Math.random()*200);
+}
+
+
 function arithmeticCalc() {
     var sum = 5 + 6;
     document.getElementById("Math").innerHTML = "5 + 6 = " + sum;
-
 }
 
 
@@ -31,6 +35,32 @@ function multiple_Operation_Arithmetic() {
 function modulus_Operation() {
     var simple_Math = 99 % 5;
     document.getElementById("Remainder").innerHTML = "The remainder, or modulus(%), of 99 divided by 5 is : " + simple_Math;
+    }
+
+
+function negation_Operator() {
+    var x = 11 * 2;
+    document.getElementById("Negation_Applied").innerHTML = -x;
 }
+
+
+function increment_PostOp() {
+    var x = 10;
+    x++;
+  document.getElementById("ValueUp").innerHTML = x;
+}
+
+
+
+var x = (15 + 45 + 75 +10) / 4;
+document.getElementById("rounded_Result").innerHTML ="The answer is: " + Math.round(x);
+
+function decrement_PostOp() {
+    var x = 10;
+    x--;
+   document.getElementById("ValueDown").innerHTML = x;
+}
+
+
 
 
