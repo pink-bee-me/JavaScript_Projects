@@ -40,3 +40,18 @@ console.log(0 < 0);
 document.getElementById("logic_boo").innerHTML = (54 ==(6 * 9));
 
 document.getElementById("logic_boo_too").innerHTML = ((-2 * -2) == (-4  * 1));
+ 
+document.getElementById("triple0").innerHTML = ("dogs" === "dogs")
+document.getElementById("triple1").innerHTML = ("dogs" === 5);
+document.getElementById("triple2").innerHTML = ("five" === 5);
+document.getElementById("triple3").innerHTML = ("dogs" === "cats");
+
+document.getElementById("andWhat0").innerHTML = (((5 - 3) > (10 - 9)) && (2 < 14));
+document.getElementById("andWhat1").innerHTML = (((5 - 3) > (10 - 8)) && (2 < 14));
+
+document.getElementById("orWhat0").innerHTML = (((5 - 3) > (10 - 9)) || (2 < 14));
+document.getElementById("orWhat1").innerHTML = (((5 - 3) > (10 - 8)) || (2 < 14));
+document.getElementById("orWhat2").innerHTML = (((5 - 3) > (10 - 7)) || (2 > 14));
+
+document.getElementById("notAnother0").innerHTML = !(5 > 10);
+document.getElementById("notAnother1").innerHTML = !(20 > 10);
