@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Voter Registration Age Verification Tool</title>
+    </head>
+
+    <body>
+
+        <h1>Voter Registration Age Verification Tool</h1>
+<br>
+<h2>Brief Preface:</h2>
+<p>In the United States, no one is required by law to vote in any local, state, or presidential election.<br>
+   According to the U.S. Constitution, voting is a right and a privilege.<br>
+   While many constitutional amendments have been ratified since the first election,<br>
+   none of them made voting mandatory for U.S. citizens.</p>
+
+<h3>Even though voting is a right and a privilege, to participate in the election process of your local, state,<br>
+    and federal government, there are a few basic requirements that must be met...<br>
+<br>    
+<h3>The Voter Registration Requirenments for The United States of America are as follows:</h3>
+    <ul>
+         <li>To register you must be a citizen of the United States</li><br>
+         <li>To vote on state issue the State's residency requirements must be met.<br>
+             This can vary by state. (You can be homeless and still meet these requirements.)</li><br>
+         <li>Voter must be 18 years old on or before Election Day. (Pre-registration ages vary by state,<br>
+             but you must be 18 years old to vote and in some state you must be 18 before the election)</li><br>
+         <li>It is the sole responsibility of the voter fullfill all of the requirements of the state before the specified deadline.(If you  dont't register in time, you don't get to vote!)</li>
+     </ul>
+ </p>
+</h3>
+<p>This program will verify the age of each registrant.
+   This verification technique requires the voter to follow a few simple instructions which include entering their legal name and date of birth into the specified fields.<br>
+   Voter Registration Age Calculation Tool facilitates the verification and accurate calculation of the registered voters age</p>
+   Thereby insuring that the person voting meets the minimum requirement of 18 years of age.</p>
+   
+<section> 
+    <form action=""> 
+        <h2>Age Verification Form</h2>
+    Enter Your Full Legal Name<br>
+<label>First Name:</label><br>
+    <input type="text" name="firstName" id="name_First" value="" placeholder="Enter First Name Here"></input><br><br>
+<label>Middle Name:</label><br>
+    <input type="text" name="middleName" id="name_Middle" value="" placeholder="Enter Middle Name Here"></input><br><br>
+<label>Last Name:<label><br>
+    <input type="text" name="lastName" id="name_Last" value="" placeholder="Enter Last Name Here"></input><br><br>
+    <label>Enter Your Date of Birth:</label><br>
+    <input type="date" name="dobDate" id="voter_DOB"  value="" placeholder="MM/DD/YYYY"></input><br><br><br>
+    <input type="submit" value="Submit"></input><br><br>
+    <button onclick="R_U_Old_E_Nuff()">Verify Age</button>
+</form>
+</section>
+
+<p id="Verified_Age"></p>
+<p id="inputDOB"></p>
+<p id="today_date"></p>
+
+
+
+ 
+
+
+
+
+
+
+
+<script src="JS/Basic_JavaScript_Age_Verification_Program.js"></script>
+    </body>
+</html>
