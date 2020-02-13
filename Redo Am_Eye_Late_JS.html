@@ -10,6 +10,8 @@
   </head>
 
   <body>
+    <section>
+      <article>
     <!-- Step 133 IF Statements/ Conditional Branching / Get Date Methods - JavaScript Exercises -->
     <p>Is it time to schedule your patient's yearly eye exam? --<br>
       <br>This is a demo of a new tool available for immediate use in Optometry Clinics : <br><br>
@@ -93,11 +95,13 @@
                   clotting</li><br>
                 <li>Some recent research has even started showing that eye exams can provide early
                   diagnosis of autism in children.</li>
-              </ul>
+              </ul><cite></cite>
+
                <br>
                <p> This is not just a matter of saving eyes , ... it's a matter of saving lives!
                 Thank you for trying our demo. </p>
-
+              </article>
+              </section>
 <br><br><br>
 
 
@@ -118,52 +122,75 @@
                       records at your clinic...<p>
                         <br>
                       <p style="font-size: xx-large; font-weight:900; ">Let's Begin!</p>
-                       <p>A sample of the greeting ( based on time of day will be displayed) while the initialization and set-up complete. The process takes less tha one second to complete. Thank you for taking a moment to try our newest product offering... The  WELLness Tracker - Preventive Medicine Protocol ( a.ka. WELLnessTracker-PMP). The only tool available that is  Approved and Endorsed by the National Board of Optometry.</p> 
-                         <p>To Initiate the Demo.../p>
-                        <button style="color:limegreen; font-size: xx-large; font-weight: 900;" onclick="Salutations_Hi_And_Bye()">Click Here to Initiate The Set-Up Process:</button>
+                       <p>A sample of the greeting ( based on time of day will be displayed) while the initialization and set-up complete. The process takes less tha one second to complete. Thank you for taking a moment to try our newest product offering... The  WELLness Tracker - Preventive Medicine Protocol ( a.ka. WELLness Tracker-PMP). The only tool available that is  Approved and Endorsed by the National Board of Optometry.</p> 
+                         <p>To Initiate the Demo...</p>
+                        <button style="color:limegreen; font-size: xx-large; font-weight: 900;" onclick="greeting()">Click Here to Initiate The Set-Up Process:</button>
                         <p id= "Greeting" style="color:fuchsia; font-style: bold; font-size: x-large;"></p>
                         <br>
             
             
                         <p> Now, you try...enter the information below:</p>
+            <section>
+                        
+            <h1>Patient Exam Scheduler</h1>
+          
+                  <label>Patient: </label><input id="LastName" type="text" name="lastName" placeholder="Last Name"></input>
+                                <input id="FirstName" type="text" name="firstName" placeholder="First Name"></input>
             
-                        <form id="PatientInfo" action=" ">
-            
-                            <label>Patient:</label>
-                            <input id="LastName" type="text" name="lastName" placeholder="Last Name" value=" "></input>
-                            <input id="FirstName" type="text" name="firstName" placeholder="First Name" value=" "></input>
-            
-                            <label>Date of Last Eye Exam:</label>
-                            <input id="DateOfLastEyeExam" type="date" name="lastEyeExam" value="2000-01-01"></input>
+                        <label>Last Eye Exam: </label>
+                            <input id="LastEyeExam" type="date" name="Last_Eye_Exam"></input>
+                            <label>Click This Button: </label><button id="GoButton" onclick="am_Eye_Late()">Go!</button>
+                      
+                        
+            </section>
+
+           
+                            
+                            
                            
-                          <input type="button" onclick="Am_Eye_Late()">Enter</input>
-                        </form>  
-            
-            
-            
-            
-            
-<!--Use The data received from the form and Patient() to calculate the remaining dates that establish the protocol and plan of action to insure timely wellness check for next year-->
-              <div style="font-size: large"> 
-                <p style="font-weight: 900; color: black">Yearly Eye Exam Re-Schedule - Patient Status:</p>
-                <p id="Patient_History_Status" style="color:blueviolet;"></p>
-                <p id="Patient_Name" style="color:blueviolet;"></p>
-                <p id="Date_of_Last_Exam" style="color:blueviolet;"></p>
-                <p id="Next_Yearly_Eye_Exam" style="color:blueviolet;"></p>
-                <p id="Reminder" style="color:blueviolet;"></p>
-                <p id="Is_It_Time_For_Reminder" style="color:darkred; font-size: x-large; font-weight:bold;"></p>
-                <br>
-                <p style="font-weight: 900; color: black">Protocol:</p>
-                <p id="Mail_Reminder" style="color:green;"></p>
-                <p id="Follow_Up" style="color:green;"></p>
-                <p id="Message" style="color:fuchsia;"></p>
-                </div>
-                <br>
+                          <section>
+                            <h1>Patient Wellness Check Status:</h1>
+                            
+                                <button onclick="am_Eye_Late()">Go!</button>
+                                <br>
+                                <br>
+                                <br>
+                                <label>Today's Date:</label><p id="Today_Date"></p>
+                                <label>Patient:</label><p id="Last_Name"><p><p id="First_Name"></p>
+                              
+                                <label>Last Exam Date</label>
+                                <p id="LastExamDate"></p>
+                              <span id=DatePassed><label>Next Exam Due:</label>
+                                <p id="NextExamDate"></p>
+                                <label>Mail-Out Reminder(30days prior) Date:</label>
+                                <p id="MailOutDate"></p>
+                                <label>FollowUp Call (14 days after Reminder)/ Date of Contact:</label>
+                                <p id="FollowUpDate"></p></span>
+                                <br>
+                                <label>Adjusted Next Exam Due Date:</label>
+                                <p id="AdjustedNextExamDate"></p>
+                                <p id="AdjustedNextExamDateNotice"> </p>
+                                <p id="AdjustedMailOutDateNotice2"></p>
+                                <label>Adjusted Reminder Mail-Out Date:</label>
+                                <p id="AdjustedMailOutDate"></p>
+                                <p id="AdjustedMailOutDateNotice"></p>
+                                <label>Adjusted FollowUp Call:</label>
+                                <p id="AdjustedFollowUpDate"></p>
+                                <p id="Its_Not_Time"></p>
+                                <br>
+                                <label> ***Future Feature*** </label>
+                                <label>Appointment Date / Time:</label>
+                                <input id="Scheduled_Exam" type="date" placeholder="Appointment"></input>
+                                <Label>Show / No Show:</label>
+                                <input id="Show" type="radio" value="Show">&nbsp SHOW &nbsp&nbsp...or &nbsp</input>
+                                <input id="NoShow" type="radio" value="NO Show">&nbsp NO Show &nbsp</input>
+                          </section>
 
            
               
-              <script src="./JS/Basic_JavaScript_7_If_Statements.js">
-              </script>
+              <script src="./JS/Am_Eye_Late.js"></script>
+              <script src="https://www.w3schools.com/lib/w3.js"></script>
+
 
 
   </body>
