@@ -137,11 +137,11 @@ fullName = function() {
                       document.getElementById("Reminder").innerHTML= "Date To Mail Reminder: " +  reminderDate;
                    }
              if  (daysDiff > 0) { 
-                      document.getElementById("Is_It_Time_For_Reminder").innerHTML =  
-                      "Send Out Reminder!!! - Past Due as of : " + mailOutReminder; 
+                      
+                      alert("Send Out Reminder!!! - Past Due as of : " + mailOutReminder); 
                    }
              if ((mailOutReminder.getTime())> (currentDate.getTime())) {
-                      document.getElementById("Is_It_Time_For_Reminder").innerHTML ="Wait Please... It's NOT Quite Time For The Reminder To Be Sent Out.";
+                     alert("Wait Please... It's NOT Quite Time For The Reminder To Be Sent Out.");
                       document.getElementById("Mail_Reminder").innerHTML = "Mail Reminder : " + mailOutReminder;
                       document.getElementById("Follow_Up").innerHTML = "Follow Up with Telephone Call  If No Response From Patient By : " + followUpDate;
                       document.getElementById("Message").innerHTML = "Assist Patient:  Schedule Appointment For Yearly Eye Exam Wellness Check";

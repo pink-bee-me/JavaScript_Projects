@@ -158,13 +158,13 @@
                      }
                            
                     else if  (daysDiff > 0) { 
-                              document.getElementById("Is_It_Time_For_Reminder").innerHTMl = alert(" PAST DUE !!! Send Out Reminder A.S.A.P.!!! - Past Due as of : " + mailOutReminder);  
+                         alert(" PAST DUE !!! Send Out Reminder A.S.A.P.!!! - Past Due as of : " + mailOutReminder);  
                      }
 
                     else if ((mailOutDate.getTime())> (currentDate.getTime())) {
                         var adjustedMailOutDate = new Date(mailOutDate);
                         adjustedMailOutDate.setDate(adjustedMailOutDate.getDate() - daysDiff);
-                        document.getElementById("Its_Not_Time").innerHTML = alert("It's NOT Time To Mail-Out Reminder");
+                       alert("It's NOT Time To Mail-Out Reminder");
 
                   }
                   
