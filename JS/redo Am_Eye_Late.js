@@ -69,7 +69,7 @@ fullName = function() {
  
       
        
-       lastEyeExam = new Date(year, month, day);
+       dateLastEyeExam = new Date(year, month, day);
        console.log(lastEyeExam + " lastEyeExam"); 
        // check value in console  
           

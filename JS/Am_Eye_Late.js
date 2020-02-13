@@ -140,7 +140,7 @@
             document.getElementById("Today_Date").innerHTML = currentDate;
             document.getElementById("Last_Name").innerHTML = lastName;
             document.getElementById("First_Name").innerHTML = firstName;    
-            document.getElementById("LastEyeExam").innerHTML = dateLastEyeExam;   
+            document.getElementById("LastExamDate").innerHTML = dateLastEyeExam;   
             document.getElementById("NextExamDate").innerHTML = nextEyeExam;
             document.getElementById("MailOutDate").innerHTML = mailOutDate;
             document.getElementById("FollowUpDate").innerHTML = followUpDate;
