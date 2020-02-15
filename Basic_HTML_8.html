@@ -84,9 +84,9 @@
 function number_To_Text() { <br><br>
 var y = 7;
 var why = y.toString();
-document.getElementByID("Changing_Kind").innerHTML = why;<br><br>
+document.getElementById("Changing_Kind").innerHTML = why;<br><br>
 var x = 22;<br><br>
-document.getElementByiD("Alt_Changing_Kind").innerHTML = x.toString();<br><br>
+document.getElementById("Alt_Changing_Kind").innerHTML = x.toString();<br><br>
 }<br><br>
 Note: The second version is more concise, as it is not necessary to create a new variable to accomplish the task of changing the number to a string.
 </p> 
@@ -95,6 +95,7 @@ Note: The second version is more concise, as it is not necessary to create a new
 <button onclick="not_My_Kind()">The Button!</button>
 <p id="Changing_Kind"></p>
 <p id="Alt_Changing_Kind"></p>
+
 
 
 
