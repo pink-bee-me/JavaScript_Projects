@@ -34,3 +34,10 @@ document.getElementById("UpCase").innerHTML = big;
 console.log(big + " toUpperCase");
 }
 
+function not_My_Kind() {
+var y = 7;
+var x = 22;
+var why = y.toString();
+document.getElementById("Changing_Kind").innerHTML = why;
+document.getElementById("Alt_Changing_Kind").innerHTML = x.toString() + "  ...Now both of the values you see here are no longer the primitive type of number, but the primitive type of string.";
+}
