@@ -13,10 +13,24 @@ function little_Piggies() {
 
  function slice_Method() {
     var sentence = "Mother Goose does not refer to one particular person; Instead, Charles Perrault (one of the initiators of the literary fairy tale genre)'s publication, Tales of My Mother Goose, which is the first authenticated starting-point for the Mother Goose stories.";
-    var sliced_piece = sentence.slice(55,15);
-    var long = sliced_piece
-    document.getElementById("Slice").innerHTML = long;
-    console.log(sliced_piece);
-    document.getElementById("Length").innerHTML = long.length;
-
+    var sliced_piece = sentence.slice(7, 13);
+    var long =sentence.length;
+    document.getElementById("Slice").innerHTML = sliced_piece;
+    console.log(sliced_piece + " slice");
+    document.getElementById("Length").innerHTML = long;
+    console.log(long + " length");
 }
+
+function see_Me() {
+    var sentence = "Mother Goose does not refer to one particular person; Instead, Charles Perrault (one of the initiators of the literary fairy tale genre)'s publication, Tales of My Mother Goose, which is the first authenticated starting-point for the Mother Goose stories.";
+    var find = sentence.search("Goose");
+    document.getElementById("FindMe").innerHTML = find + " : The function see_Me() runs onclick and uses the search() method to return the location of the first occurence of the argument that was requested in the parameter of the search() method,... in this case, that was 'Goose'. 'Goose' was found at the seventh position in the string that was searched (see variable 'sentence')";
+}
+
+function make_Me_Big() {
+var little = "i am uppercase!";
+var big = little.toUpperCase();
+document.getElementById("UpCase").innerHTML = big;
+console.log(big + " toUpperCase");
+}
+
