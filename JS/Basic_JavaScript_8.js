@@ -41,3 +41,28 @@ var why = y.toString();
 document.getElementById("Changing_Kind").innerHTML = why;
 document.getElementById("Alt_Changing_Kind").innerHTML = x.toString() + "  ...Now both of the values you see here are no longer the primitive type of number, but the primitive type of string.";
 }
+
+
+function precision_Method() {
+var longNum = 19710419.04291990101819960203199803222000;
+document.getElementById("Fix_Long_Num").innerHTML = longNum.toPrecision(15);
+}
+
+function toFixed_Method() {
+  
+var num = 19700419.04291990101819960203199803222000;
+var alt_num = 19700419;
+var fix_1 = num.toFixed();
+document.getElementById("Default_No_Places").innerHTML = fix_1 + " :  This example (num.toFixed()) returns the default value, which means...the number with no decimal places.";
+var fix_2 = num.toFixed(9);
+document.getElementById("Fixed_To_9_Places").innerHTML = fix_2 + " : This example (num.toFixed(9)) returns the value of the number with nine decimal places.";
+var fix_3 = alt_num.toFixed(2);
+document.getElementById("Fixed_To_Dollars_And_Cents").innerHTML = fix_3 + " : This example (alt_num.toFixed(2)) returns the value of the number (which had no decimal places) plus two decimal places. This would come in handy with reports, graphs, tables , etc...where having a uniform way to visually represent the numbers as a string is needed. So, where there where none it can put the placeholders there, in this case it was two decimal places.";
+}
+
+
+function what_Is_It() {
+ var str_1 = "This dog won't hunt!";
+ var res_value_1 = str_1.valueOf();
+ document.getElementById("What_Is_It_Now").innerHTML = res_value_1 + "  :  This is the value that is contained in the str_1 variable,... string";
+ }
