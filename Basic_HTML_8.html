@@ -13,6 +13,49 @@
 <button onclick = "slice_Method()">Click Here</button>
 <p id="Slice"></p>
 <p id="Length"></p>
-    <script src = "./JS/Basic_JavaScript_8.js"></script>
+    
+<h2>Challenge Step 145</h2> 
+<h3>String Methods:</h3>
+   <h4>search(): method that searches a string for a specified value<br>
+    and returns the position of that match</h4>
+
+    <ul><h5>Code for the key parts to search() method:</h5>
+        <li>var str = "The search() method returns the position of the first occurrence of a specified text in a string:"</li>
+        <li>var pos = str.search("occurrence");</li>
+        <li>document.getElementById("demo").innerHTML = pos;</li>
+        <li>(of course, this is either in an external JavaScript file or wrapped in script tags)</li>
+</ul>
+
+    <p>NOTE: indexOf() and search()...Although very similar in appearance and function--<br> indexOf() and search() ARE NOT EQUAL.</p><br>
+       <ul><h5>These are the differences:</h5>
+            <li>The search() method canNOT take a second start position argument.</li>
+    <li>The indexOf() method canNOT take powerful search values (regular expressions as parameters/arguments).</li>
+    </ul>
+ <br>
+ <p>Example of search():</p>
+ <p id="See"></p>      
+<br>
+
+<h4>toUpperCase(): method used to convert a string to upper case (ABCD)</h4>
+<ul><h5>Code for the key parts to toUpperCase() method:</h5>
+    <li>function myFunction() {</li>
+        <li>var text = document.getElementById("demo").innerHTML;</li>
+        <li>document.getElementById("demo").innerHTML = text.toUpperCase();</li>
+        <li>}</li>
+        <li>(This code is also either in an external JavaScript file or wrapped in script tags)</li>
+</ul>
+
+<p>Example of toUpperCase():</p>
+<p id="UpCase"></p>
+</p>
+
+
+
+
+
+
+
+
+<script src = "./JS/Basic_JavaScript_8.js"></script>
 </body>
 </html>
