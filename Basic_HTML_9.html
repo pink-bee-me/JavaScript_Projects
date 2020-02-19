@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link ref="stylesheet" type="text/css" href="./Css/CSS_1.css">
+</head>
+<body>
+ <p>How Many seconds would you like to set your alarm for?</p>
+   <input id="seconds" value="" />
+<button onclick="countdown()">Click here</button>
+<p id="timer"></p>
+
+
+<!--Slideshow container-->
+<div class="slideshow-container">
+
+
+  <!--fULL-WIDTH IMAGES WITH NUMBER AND CAPTION TEXT-->
+  <div class="mySlides_fade">
+    <div class="numberText">1 / 3</div>
+    <img src="./Images/church_pic_mimi.jpg" style="width:100%">
+    <div class="text">Caption Text one</div>
+</div>
+
+<div class="mySlides_fade">
+  <div class="numberText">2 / 3</div>
+  <img src="./Images/frankie_collage.jpg" style="width:100%">
+  <div class="text">Caption Text two</div>
+</div>
+
+<div class="mySlides_fade">
+  <div class="numberText">3 / 3</div>
+  <img src="./Images/niles_dyson_mim.jpg" style="width:100%">
+  <div class="text">Caption Text three</div>
+</div>
+
+<!-- Next and Previous Buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The Dots/Circles -->
+<div style="text-align:center;">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(1)"></span>
+</div>
+
+
+<script src="./JS/Basic JavaScript_9.js"></script>
+
+
+</body>
+</html>

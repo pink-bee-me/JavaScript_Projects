@@ -13,7 +13,12 @@
 <button onclick = "slice_Method()">Click Here</button>
 <p id="Slice"></p>
 <p id="Length"></p>
+<<<<<<< HEAD
     
+=======
+
+ <br><br><br>   
+>>>>>>> 0182e8871811df1a055ad7fe05c5860f2f6e99b1
 <h2>Challenge Step 145</h2> 
 <h3>String Methods:</h3>
    <h4>search(): method that searches a string for a specified value<br>
@@ -31,12 +36,34 @@
             <li>The search() method canNOT take a second start position argument.</li>
     <li>The indexOf() method canNOT take powerful search values (regular expressions as parameters/arguments).</li>
     </ul>
+<<<<<<< HEAD
  <br>
  <p>Example of search():</p>
  <p id="See"></p>      
 <br>
 
 <h4>toUpperCase(): method used to convert a string to upper case (ABCD)</h4>
+=======
+ <br><br>
+ <p>Example of search():</p>
+ <p>This is the code I wrote:<br><br>
+    function see_Me() { <br><br>
+    var sentence = "Mother Goose does not refer to one particular person;<br>
+    Instead, Charles Perrault (one of the initiators of the literary fairy<br>
+    tale genre)'s publication, Tales of My Mother Goose, which is the first<br>
+    authenticated starting-point for the Mother Goose stories.";<br>
+
+    <br>var find = sentence.search("Goose");<br>
+   <br> document.getElementById("FindMe").innerHTML = find;<br>
+    }</p><br>
+    <p> To see the result...</p>
+    <button onclick="see_Me()">Click Me!</button>
+    <p id="FindMe"></p>     
+<br><br><br><br>
+
+<h4>toUpperCase(): method used to convert a string to upper case (ABCD)</h4>
+<p>Note: toUpperCase() method does NOT change the original string ( so a new variable needs to be used to hold the newly created value that is in uppercase)</p>
+>>>>>>> 0182e8871811df1a055ad7fe05c5860f2f6e99b1
 <ul><h5>Code for the key parts to toUpperCase() method:</h5>
     <li>function myFunction() {</li>
         <li>var text = document.getElementById("demo").innerHTML;</li>
@@ -45,6 +72,7 @@
         <li>(This code is also either in an external JavaScript file or wrapped in script tags)</li>
 </ul>
 
+<<<<<<< HEAD
 <p>Example of toUpperCase():</p>
 <p id="UpCase"></p>
 </p>
@@ -57,5 +85,143 @@
 
 
 <script src = "./JS/Basic_JavaScript_8.js"></script>
+=======
+<p>Example of toUpperCase():</p><br>
+
+<p>This is the code I wrote:<br><br>
+    function make_Me_Big() {<br><br>
+        var little = "i am uppercase!";<br><br>
+        var big = little.toUpperCase();<br><br>
+        document.getElementById("UpCase").innerHTML = big;<br>
+        }<br>
+    </p>
+ <br><br>
+ <p>Click here to call the function make_Me_Big(), and see the result:</p> 
+ <button onclick= "make_Me_Big()">Here!</button>  
+    
+    <p id="UpCase"></p>
+
+<br><br><br>
+
+
+
+<h3>Step 147 : Numbers Methods</h3>
+<br>
+<h4>toString() method: returns a number as a string (text type/value)</h4>
+<br>
+<p>My code goes something like this:<br>
+<br>
+function number_To_Text() { <br><br>
+var y = 7;
+var why = y.toString();
+document.getElementById("Changing_Kind").innerHTML = why;<br><br>
+var x = 22;<br><br>
+document.getElementById("Alt_Changing_Kind").innerHTML = x.toString();<br><br>
+}<br><br>
+Note: The second version is more concise, as it is not necessary to create a new variable to accomplish the task of changing the number to a string.
+</p> 
+<br><br>
+<p>Click The Button To See The Result:</p>
+<button onclick="not_My_Kind()">The Button!</button>
+<p id="Changing_Kind"></p>
+<p id="Alt_Changing_Kind"></p>
+<br><br><br>
+
+
+
+
+<h3>Step 149</h3> 
+<h4>String Methods:</h4>
+   <h4>toPrecision(): method used to return a string as a number of a specified length</h4>
+
+    <ul><h5>Code for toPrecision() method:</h5>
+        <li>function precision_Method() {
+        <li>var longNum = 19710419.04291990101819960203199803222000;</li>
+        <li>document.getElementById("Fix_Long_Num").innerHTML = longNum.toPrecision(15);</li>
+        <li>}</li>
+        <li>(of course, this is either in an external JavaScript file or wrapped in script tags)</li>
+</ul>
+
+    <p> To see the result...</p>
+    <button onclick="precision_Method()">Click Me!</button>
+    <p id="Fix_Long_Num"></p>     
+<br>
+<br><br>
+
+<h3>Step 150</h3>
+<h4>toFixed(): method that converts a number into a string, keeping a certain number of decimels( the default number of digits after the decimal point being none (0)).<br>
+   <br> Note: if the desired number of decimals are higher than the actual number, nulls are added to create the desired decimal length.
+    Return Value: A String, representing a number, with the exact number of decimals.</h4>
+<br>
+
+<ul><h5>My code looked like this:</h5>
+    <lifunction toFixed_Method() {></li>
+    <li>var num = 19700419.04291990101819960203199803222000;</li>
+    <li>var alt_num = 19700419;</li>
+    <li>var fix_1 = num.toFixed();</li>
+    <li>document.getElementById("Default_No_Places").innerHTML = fix_1 + <br>
+        "This example (num.toFixed()) returns the default value, which means...the number with no decimal places";</li>
+    <li>var fix_2 = num.toFixed(9)</li>
+    <li>document.getElementById("Fixed_To_9_Places").innerHTML = fix_2 + <br>
+        "This example (num.toFixed(9)) returns the value of the number with nine decimal places.";</li>
+    <li>var fix_3 = alt_num.toFixed(2)</li>   
+    <li>document.getElementById("Fixed_To_Dollars_And_Cents").innerHTML = fix_3 +<br>
+         "This example (alt_num.toFixed(2)) returns the value of the number (which had no decimal places) plus two decimal places. This would come in handy with reports, graphs, tables , etc...where having a uniform way to visually represent the numbers as a string is needed. So, where there where none it can put the placeholders there, in this case it was two decimal places";</li>   
+    </ul>
+
+<br><br>
+    <h3>To see the return...</h3>
+    <button onclick="toFixed_Method()">Return Please...</button>
+    <br><br>
+<div id="Results_Please">
+<h4>Here are the results:</h4>
+
+<p>Example #1:</p>
+<p id="Default_No_Places"></p>
+<p>Example #2:</p>
+<p id="Fixed_To_9_Places"></p>
+<p> Example #3:</p>
+<p id="Fixed_To_Dollars_And_Cents"></p>
+</div>
+<br><br>
+
+
+<h4>valueOf(): method that returns the primitive value of a String object</h4> <br>
+ Note: This method is usually called automatically by JavaScript behind the scenes, and not explicitly in code.
+ <br><br>
+ Syntax: string.valueOf()<br>
+ Return Value: A String, representing the primitive value of a string.<br>
+ primitive: a value type in JavaScript ( opposed to Reference Type ). Number, String, Boolean, Symbol, Undefined and Null are primitives. Primitives are independent: meaning that they are completely separate from each other . The values that primitive variables hold are kept independent of other variables. Primitives are copied by their value ( Not their reference, or storage in memory) Primitives point to a value, Not a container.
+ (objects,methods, and functions are NOT primitives)<br>
+ 
+<h5>Extra Note: JavaScript distinguishes between String objects and primitive string values. (The same is true of Boolean and Numbers.)
+    String literals (denoted by double or single quotes) and strings returned from String calls in a non-constructor context <br>
+    (that is, called without using the new keyword) are primitive strings. JavaScript automatically converts primitives to String objects, so that it's possible to <br>
+    use String object methods for primitive strings. In contexts where a method is to be invoked on a primitive<br>
+     string or a property lookup occurs, JavaScript will automatically wrap
+    <br> the string primitive and call the method or perform the property lookup.</h5>
+<br><br><br>
+
+
+<ul>Example Code:
+     <li>function what_Is_It() {</li>
+     <li>var str_1 = "This dog won't hunt!";</li>
+     <li> var res_value_1= str_1.valueOf();</li>
+     <li>document.getElementById("What_Is_It_Now").innerHTML = res_value_1 = ":<br>
+          This is the value that is contained in the str_1 variable,... string";</li>
+     <li>}</li>
+     </ul>
+ 
+ <br><br>
+     <h3>To see the return...</h3>
+     <button onclick="what_Is_It()">Return Please...</button>
+     <p id="What_Is_It_Now"></p>
+ 
+
+
+ 
+
+        <script src = "./JS/Basic_JavaScript_8.js"></script>
+>>>>>>> 0182e8871811df1a055ad7fe05c5860f2f6e99b1
 </body>
 </html>
