@@ -1,10 +1,10 @@
 function Potatoes_What() {
-  var potatoes = ""; 
-  var x= 1;
-
+    var x= 1;
+    count="";
+   
     while (x < 8) {
-        potatoes = "<br>" +  x;
-        x++;
+     count =+ "<br>" + x;
+      x++;}{
+     document.write(count + " potatoes,");
     }
-    document.getElementById("Answer").innerHTML = potatoes + " potatoe, "
-    }
+}
