@@ -1,12 +1,11 @@
-function Call_Why() {
-    let counter = 1;
-   let potatoes = 0;
-    while (counter > 0 && counter < 5) {
-       potatoes =+ counter;
-       document.getElementById("answer").innerHTML = potatoes + " potatoe, <br>";
-        counter++;
+function Potatoes_What() {
+    potatoes = "";
+    x= 1;
+    while (x < 8); {
+        potatoes =  "<br>" + x + " potatoe, ";
+        x++;
     }
-    {
-       document.getElementById("answerContinued").innerHTML = "5 potatoe, 6 potatoe, 7 potatoe more...THE END!!!";
- }
-}
+    document.getElementById("Answer").innerHTML = potatoes;
+    }
+    
+
