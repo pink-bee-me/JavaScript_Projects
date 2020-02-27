@@ -89,3 +89,20 @@ document.getElementById("Demo2").innerHTML = x + " (BLOCK SCOPE with the use of 
 }
 document.getElementById("Demo3").innerHTML = x;
     }
+
+
+function Stock_Inventory_Item() {
+    let instrument = {
+        type:"bassoon",
+        make:"Heckel",
+        model:"#10924",
+        year:"1970",
+        color:"mahogany",
+        condition:"used",
+        price:"45,000.00",
+        inStock: true,
+        inventory: function() {
+            return "Instrument: " + this.type + "<br>Make: " + this.make +"<br>Model: " + this.model + "<br>Year: " + this.year + "<br>Color: " + this.color + "<br>Condition: " + this.condition + "<br>Price: " + this.price + "<br>In Stock: " + this.inStock },
+        }     
+     document.getElementById("New_Item").innerHTML = instrument.inventory();
+    }
