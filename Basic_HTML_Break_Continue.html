@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Step-199 Break/Continue/Label</title>
+    </head>
+        <body>
+            <section>
+                <h3>Javascript Flow / Loop Control Statements</h3>
+                <h4>Definitions and Explanations:</h4>
+                
+                <dl>
+                    <dt>Break Statement:</dt>
+                    <dd>These are used to terminate a loop immediately, even if the condition is not yet fulfilled.It is used to exit a loop early, breaking out of the enclosing curly braces.Break statements are also used with switch statements. Adding a label is optional. The key take away is that a break statement quits executing the loop- jumping out of the loop to execute the next code that comes after the loop.</dd><br>
+                    <dt>Syntax for Break Statement:</dt>
+                     <dd>break [label];</dd><br><br>
+                    <dt>Continue Statement:</dt>
+                    <dd>The continue statement tells the interpreter to immediately start the next iteration of the loop and skip the remaining code block of the current iteration in process. When a continue statement is encountered, the program flow moves to the loop check expression immediately and if the condition remains true, then it starts the next iteration, otherwise the control comes out of the loop.</dd><br>
+                    <dt>Syntax for Condition Statements:</dt>
+                    <dd>condition [label];</dd><br><br>
+                    <dt>Label Statements:</dt>
+                    <dd>These can be used with both break and continue statements. Their purpose is the offer a more precise means to control the flow within a program. A label is simply an identifier that is followed by a colon. The Label statement comes just before a statement or a block of code.</dd><br>
+                    <dt>Syntax for Label Statements:</dt>
+                    <dd>labelName:<br>
+                         statement</dd><br>
+
+                    <dt>NOTE:</dt>
+                    <dd>Line breaks are NOT allowed between the 'continue' or 'break' statement and its label name. Also, there should not be any other statement in between a label name and associated loop.</dd><br>
+                   
+                </dl>
+
+            </section>
+
+            <section>
+                <h3>Break Statement Demo:</h3>
+                <button onclick="pickMe()">Click Here to Run The Break Statement Demo.</button>
+                <p id="You_Got_It"></p>
+            </section>
+
+            <section>
+                <h3>Continue Statement Demo:</h3>
+                <button onclick="EveryOne_Except_You()">Click Here to Run The Continue Statement Demo.</button>
+                <p id="Yes_EveryOne_Else"></p>
+            </section>
+>
+
+
+        </body>
+    </html>
