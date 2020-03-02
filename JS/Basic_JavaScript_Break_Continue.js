@@ -12,9 +12,9 @@ function pickMe() {
 
     for (i < (students.length + 1); i++;)
     {
-         let pick = students[Math.floor(Math.random() * students.length)];
+         let pick = students[Math.floor(Math.random() * students.length)];//Randomly picks a name from the student array to become an office aid
 
-    officeAid.splice(0,0,pick);
+    officeAid.splice(0,0,pick);//places the randomly picked student name in a new array called officeAid[]
 
 document.getElementById("You_Got_It").innerHTML = "Office Aid: " +  officeAid[i] + "  Class Hour: " + classPeriod + "<br>";
 
