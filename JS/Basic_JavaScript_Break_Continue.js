@@ -1,51 +1,65 @@
-const students=["Mary","Tom","Bob","Alex","Rick","Dave","Sue","Carl","Agnes","Gary","Pete","Bea","Bev","Gene","Jean","Lee","Leah","Tim","Burt","Will","Sal","Tia","Mya","Rudy"];
-    var i = 0;
-    var classPeriod = i +1;
-    
-    const officeAid = [];
-
+var content = "";
+var i=0;
+let students=["Mary","Tom","Bob","Alex","Rick","Dave","Sue","Carl","Agnes","Gary","Pete","Bea","Bev","Gene","Jean","Lee","Leah","Tim","Burt","Will","Sal","Tia","Mya","Rudy"];
+var classPeriod;
+var indexOfPick;
+var removedPick;
 
 function pickMe() {
 
-
-
-
-    for (i < (students.length + 1); i++;)
+    for (i = 0; i < students.length; i++) { 
+    arrayFunction();
+             
+    if (i === 6){
+        break;
+    }    
+        
+    function arrayFunction() {
+    pick = students[Math.floor(Math.random() * students.length)]; 
+    classPeriod = i + 1;
+    console.log(pick + " : " + classPeriod);
+    indexOfPick =  students.indexOf(pick);  // finding index of the pick
+    removedPick = students.splice(indexOfPick,1);//removing the pick from the students array so that you can not have a duplicate random pick
+    console.log(students);
+    console.log(removedPick);
     {
-         let pick = students[Math.floor(Math.random() * students.length)];//Randomly picks a name from the student array to become an office aid
+    var officeAid = [removedPick];
+    {
+    content += "<br>Student Aid: " + officeAid + "<br>Class Period: "
+    + classPeriod + "<br><br>";
+    document.getElementById("You_Got_It").innerHTML = content;
 
-    officeAid.splice(0,0,pick);//places the randomly picked student name in a new array called officeAid[]
+    
+        
+}}}}}
 
-document.getElementById("You_Got_It").innerHTML = "Office Aid: " +  officeAid[i] + "  Class Hour: " + classPeriod + "<br>";
+document.getElementById("Closed").innerHTML = ' All Spots For Office Aid Are Full At This Time! Choose An ALternative Elective for the remainder of students that selected Office Aid.';  
 
 
-          if (i > 6);{
-            break;}
-         
-          } 
+     
+function pickAlternateElective() {
+    document.getElementById("Did_Not_Get_It").innerHTML = students
+};
+ 
+    
+  
+function Not_Odd_At_All() {
+     var x;
+     var response ="";
 
-          document.getElementById("Closed").innerHTML = ' All Spots For Office Aid Are Full At This Time! Choose An ALternative Elective.';
+     for (x=0; x < 100;x++) { 
+        response += "<br>" + x; 
+        if ((x % 2) != 0) { 
+       continue;};
+       if (x > 20) {
+           break;
+       };
+
+        
+         document.getElementById("No_OddBalls").innerHTML = response + "<br>These beautiful numbers are clearly Not 'Odd' at all!<br>";
+         x++;
         }
-
-
-
-
-
-
-
-
-
- function Not_Odd_At_All() {
-     var x=1
-     for (x += x; x < 21;) { document.getElementById("No_OddBalls").innerHTML = "This beautiful " + x + ", is clearly Not 'Odd' at all!<br>";x++;
-    ((x % 2) != 0);{
-        continue;
- (x > 21);
-    break;
-     }    
-
-     
-     
-     }  
-     document.getElementById("end").innerHTML = "The End.";
     }
+            document.getElementById("end").innerHTML = "The End.";
+
+  
