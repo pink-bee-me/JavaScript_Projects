@@ -54,12 +54,10 @@ function Not_Odd_At_All() {
        if (x > 20) {
            break;
        };
-
-        
          document.getElementById("No_OddBalls").innerHTML = response + "<br>These beautiful numbers are clearly Not 'Odd' at all!<br>";
          x++;
         }
     }
-            document.getElementById("end").innerHTML = "The End.";
+     document.getElementById("end").innerHTML = "The End.";
 
   
