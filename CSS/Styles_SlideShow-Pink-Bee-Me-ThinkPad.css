@@ -1,0 +1,129 @@
+* {box-sizing: border-box;}
+
+.container {
+    width: 60%;
+    height: 475px;
+    border: 3px solid black;
+    padding: .5%;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    background-color: black;
+}
+
+.fade .slides {
+    width: 60%;
+    height: 40px;
+    border 2px solid black;
+    margin: auto;
+    position: relative;
+     margin-top: 5%;
+}
+  
+
+/*hide images by default*/
+.slides {
+    background-color:black;
+    display: none;
+}
+
+
+img {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+   ;
+
+}
+
+
+
+ /* Next and Previous buttons*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -22px;
+    padding: 16px;
+    color: white; 
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* on hover: add transparent black background*/
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*caption text*/
+p {
+    color: #d8f6f7;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+/*number text*/
+ h3 {
+    color:#d8f6f7;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width:100%
+}
+
+/* dot indicators */
+.contain_dots {
+    text-align: center;
+    margin-top: 1%;
+}
+ .dots {
+    margin-top: 2%;
+    cursor: pointer; 
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    display:inline-block;
+    background:gray;
+    border-radius: 50%;
+    transition:background-color .06s ease;
+}
+
+.active, .dots:hover {
+    background-color: #313962
+}
+
+ /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

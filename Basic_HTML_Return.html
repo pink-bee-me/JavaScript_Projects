@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Return in JavaScript</title>
+        <link rel="stylesheet" href="./CSS/Styles_JS_Step178_192.css">
+    </head>
+    <body>
+        <section>
+            <p class="sec_head">Using The Return Statement in JavaScript Functions</p>
+            <dl>
+              <dt>Define Return Statement:</dt>
+                <dd>Rule #1 - Every function in JavaScript [returns] undefined<br> unless otherwise specified. A value can be specified in a function with the return statement. </dd>
+                <dd>Rule #2 - The [return] statement (when executed) ends function execution immediately...meaning any code after the return statement will not be executed.</dd>
+                <dd>Rule #3 - The [return] statement returns a value to the function caller.</dd>
+                <dd>Note: The [return] statement can be used to interrupt or end a function at a specific point,...for example, if a user is required to input specific data type but doesn't follow directions you can use return to end the function. The [return] statement can also be used to interrupt a loop at a specified point. Also, you can return a function from within a function...but, this has to do with closures and I haven't learned that yet.</dd>
+            </dl>
+            <section>Here is what my code looks like:<br>
+            <p class="coding">
+                function Get_Me_A_Value() { <br>
+                    let double = function(num) {<br>
+                        return num * 2;<br>
+                    }<br>
+                    let six = double(3);<br>
+                    let twelve = double(six);<br>
+                    document.getElementById("Get_You_What?").innerHTML = <br>(twelve + double(10)- six);<br>
+                 }<br>
+                </p>
+             
+            <button onclick="Get_Me_A_Value()">Click Here To See What The Return Statement Can Do!!!</button>
+            <p id="Get_You_What?"></p>
+        </section> 
+
+
+
+
+
+
+        </section>
+        <script src="./JS/Basic_JavaScript_Return.js"></script>
+    </body>
+</html>

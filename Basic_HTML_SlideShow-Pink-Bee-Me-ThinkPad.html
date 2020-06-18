@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="./CSS/Styles_SlideShow.css">
+</head>
+<body>
+
+
+<!--Slideshow container-->
+    <div class="container">
+<!-- Images with number and caption text-->  
+        <div class="slides fade">
+            <img src="./Images/slider1_1.jpg"/> 
+            <h3> 1 / 7 </h3>
+            <p> Li'l Bit</p>
+        </div>
+
+        <div class="slides fade">
+            <img src="./Images/slider_2.jpg"/>
+            <h3 > 2 / 7 </h3>
+            <p> Kids and Mimi</p> 
+        </div>
+    
+        <div class="slides fade">
+            <img src="./Images/slider3_3.jpg"/>
+            <h3> 3 / 7 </h3>
+                
+             <p>Frankie and Dyson</p>
+        </div>
+
+        <div class="slides fade">
+            <img src="./Images/slider_4.jpg"/>
+            <h3> 4 / 7 </h3> 
+            <p>LaurieSue and Dyson</p> 
+        </div>
+    
+        <div class="slides fade">
+            <img src="./Images/slider_5.jpg"/>
+            <h3> 5 / 7 </h3>
+            <p>Jordan Rebecca</p> 
+        </div>
+
+        <div class="slides fade">
+            <img src="./Images/slider_6.jpg"/>
+            <h3> 6 / 7 </h3>
+            <p>Mimi, Frankie, Grand-Daddy</p>
+        </div>
+    
+        <div class="slides fade">
+            <img src="./Images/slider_7.jpg"/>
+            <h3> 7 / 7 </h3>
+            <p>Grand-Daddy, Mimi, Frankie, Dyson@ SeaWorld SanAntonio,Texas</p> 
+        </div>
+
+            <!--Next and Previous Buttons-->
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+
+</div>
+                <!--dots/circles-->
+        <div class="contain_dots">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
+            <span class="dots" onclick="currentSlide(5)"></span>
+            <span class="dots" onclick="currentSlide(6)"></span>
+            <span class="dots" onclick="currentSlide(7)"></span>
+        </div>
+
+ <script src="./JS/Basic_JavaScript_SlideShow.js"></script>
+
+</body>
+  
+  </html>
